@@ -2,6 +2,19 @@ from main import ContactBook
 
 
 def run():
+    """ Run the command-line interface for the Contact Book application.
+
+    This function provides an interactive menu that allows the user to:
+        1. Add a new contact.
+        2. Edit an existing contact.
+        3. View detailed information for a specific contact.
+        4. View all contacts in a table.
+        5. Delete a contact.
+        6. Quit the application and save contacts to a file.
+
+    When the user exits the program (option 6), all contacts are saved to
+    a text file named ``contact_book.txt`` in the parent directory.
+    """
     book = ContactBook()
 
     print('Welcome to contact book application!')
